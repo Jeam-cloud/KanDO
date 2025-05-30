@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+{% block styles %}
+    <link rel="stylesheet" href="static/styles.css">
+
+{% endblock %}
+{% block body_class %}format{% endblock %}
+
+{% block content %}
+<div id="home-page">
+    <div id="sidebar">
+        <div id="icons">
+            <a href="{{ url_for('index') }}">
+                <img src="{{ url_for('static', filename='icons/home_24dp_E8EAED_FILL0_wght500_GRAD0_opsz24.svg') }}" alt="Home">
+            </a>
+            <a href="{{ url_for('signup') }}">
+                <img src="{{ url_for('static', filename='icons/person_24dp_E8EAED_FILL0_wght500_GRAD0_opsz24.svg') }}" alt="Signup">
+            </a>
+            <a href="{{ url_for('logout') }}">
+                <img src="{{ url_for('static', filename='icons/logout_24dp_E8EAED_FILL1_wght500_GRAD0_opsz24.svg') }}" alt="Logout">
+            </a>
+        </div>
+    </div>
+
+    <div id="main-area">
+        <div id="top-header">
+            <h1>Welcome {{ current_user.username }}!</h1>
+        </div>
+
+        <div id="container">
+            <div class="columns" id="todo">
+                <p>Todo</p>
+                <button onclick="addNote('todo')">+ Add note</button>
+                {% for note in notes if note.column == 'todo' %}
+                    <textarea 
+                        class="note" 
+                        draggable="true"
+                        data-id="{{ note.id }}"
+                        data-column="todo">{{ note.body }}</textarea>
+                {% endfor %}
+            </div>
+
+            <div class="columns" id="doing">
+                <p>Doing</p>
+                <button onclick="addNote('doing')">+ Add note</button>
+                {% for note in notes if note.column == 'doing' %}
+                    <textarea 
+                        class="note" 
+                        draggable="true"
+                        data-id="{{ note.id }}"
+                        data-column="doing">{{ note.body }}</textarea>
+                {% endfor %}
+            </div>
+
+            <div class="columns" id="done">
+                <p>Done</p>
+                <button onclick="addNote('done')">+ Add note</button>
+                {% for note in notes if note.column == 'done' %}
+                    <textarea 
+                        class="note" 
+                        draggable="true"
+                        data-id="{{ note.id }}"
+                        data-column="done">{{ note.body }}</textarea>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

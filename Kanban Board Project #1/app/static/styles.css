@@ -1,0 +1,114 @@
+.format {
+    margin: 0;
+    padding: 0
+}
+
+#home-page {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    background-image: url("/static/images/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Inter", sans-serif;
+}
+
+#sidebar {
+    background-color: #222226;  
+    min-height: 100vh;
+    width: max(3%, 60px);
+}
+
+#icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:20px;
+    gap: 15px;
+}
+
+#icons svg {
+    width: 30px;
+    height: 30px;
+    fill: white;
+}
+
+#main-area {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+#top-header {
+    margin-left: 20px;
+    padding: 0;
+    margin-bottom: 0;
+    height: 5vh;
+    text-align: center;
+}
+
+#top-header h1 {
+    color: white;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    gap: 20px;
+}
+
+.columns {
+    background-color: #222226;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+    min-height: 10px;
+    width: 40vh;
+    display: flex;
+    padding: 5px 0;
+}
+.columns p {
+    color: white;
+    align-self: flex-start;
+    text-align: left;
+    font-weight: 700;
+    margin-left: 14px;
+}
+
+.columns button {
+    border: none;
+    background-color: #222226;
+    color: white;
+    align-self: flex-start;
+    text-align: left;
+    padding: 0 0 15px 0;
+    width: 90%;
+    margin-left: 12px;
+    cursor: pointer;
+}
+
+
+.note-container {
+    position: relative;
+    margin: 0 10px 10px 10px;
+    width: 90%
+}
+
+.note {
+    background-color: #3F3F42;
+    border: 1px solid #5A5A5E;
+    border-radius: 3px;;
+    width: 90%;
+    height: 100px;
+    resize: none;
+    margin: 0 10px 10px 10px;
+    color: white;
+    cursor: grab;
+}
+

@@ -1,0 +1,83 @@
+.format {
+    margin: 0;
+    padding: 0;
+}
+
+#signup-page {
+    background-image: url("/static/images/todo.jpg");
+    background-size: cover;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-position: right -275px center;
+    font-family: "Montserrat", serif;
+}
+
+#wrapper {
+    background-color: white;
+    min-height: 100vh;
+    border: none;
+    border-radius: 0 20px 20px 0;
+    width: max(40%, 600px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#flex-signup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px
+}
+
+#title {
+    font-weight: 900;
+    font-size: 75px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0px;
+}
+
+.label {
+    background-color: #FE5654;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 9px 0 0 9px;
+    padding: 5px;
+}
+
+.input-field {
+    background-color:  #FFD6D1;
+    width: 50%;
+    border: none;
+    border-radius: 0 9px 9px 0;
+    font-size: 15px;
+    padding-left: 10px;
+    font-family: "Montserrat", serif;
+}
+
+.label svg {
+    fill: white;
+    width: 27px;
+    height: 27px;
+}
+
+.signup-button {
+    border: none;
+    background-color: #FE5654;
+    border-radius: 20px;
+    color: white;
+    padding: 7px 80px 7px 80px;
+}

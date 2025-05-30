@@ -1,0 +1,82 @@
+.format {
+    margin: 0;
+    padding: 0;
+}
+
+.login-page {
+    background-image: url("/static/images/todo.jpg");
+    background-size: cover;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background-position: right -275px center;
+    min-height: 100vh;
+    font-family: "Montserrat", serif;
+}
+
+.wrapper {
+    background-color: white;
+    height: 100vh;
+    width: max(40%, 600px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 20px 20px 0;
+}
+
+.flex-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#title {
+    font-weight: 900;
+    font-size: 75px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0px;
+}
+
+.label {
+    background-color: #FE5654;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 9px 0px 0px 9px;
+    padding: 5px;
+}
+
+.input-field {
+    border: 0px;
+    border-radius: 0px 9px 9px 0px;
+    background-color: #FFD6D1;
+    width: 50%;
+    font-family: "Montserrat", serif;
+    font-size: 15px;
+    padding-left: 10px;
+}
+
+.label svg {
+    fill: white;
+    width: 27px;
+    height: 27px;
+}
+
+.login-button {
+    border: none;
+    border-radius: 20px;
+    background-color: #FE5654;
+    color: white;
+    padding: 7px 80px 7px 80px;
+}
